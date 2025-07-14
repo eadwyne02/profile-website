@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap:https://eadwyne02.github.io/profile-website/sitemap.xml
