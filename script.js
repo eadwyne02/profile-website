@@ -13,7 +13,7 @@ if (bars){
     about.href = "about.html"
     const project = document.createElement("a")
     project.innerText="Project";
-    project.href = "Project.html"
+    project.href = "project.html"
     const contact = document.createElement("a")
     contact.innerText="Contact";
     contact.href = "contact.html"
