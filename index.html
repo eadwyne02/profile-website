@@ -8,208 +8,739 @@
     <meta property="og:image" content="https://eadwyne02.github.io/profile-website/img/ed6.jpg" / >
     <meta property="og:url" content="https://eadwyne02.github.io/profile-website " / >
     <title>Edwin Adeyi-Samuel| Frontend web developer</title>
-    <link rel="stylesheet" href="fontawesome/css/all.css">
-    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="fontawesome7/css/all.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Josefin+Sans:wght@200;300;400;600&display=swap" rel="stylesheet"/>
 </head>
-<body>
-   <header>
-    <div class="head">
-        <div class="logo">
-            <h4 id="Edwin1">EDWIN</h4>
-        </div>
-        <div>
-            <nav class="navigation">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="project.html">Projects</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
-        <i class="fas fa-bars " id="bars"></i>
-        <i class="fas fa-times " id="times"></i>
+<body class="bg-[#0f172a] min-h-screen">
+<header class="flex justify-between items-center fixed top-0 left-0 right-0 z-50 h-20 bg-[#0f172a]/60 
+   backdrop-blur-lg border-b border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
+  <div class="flex items-center gap-6 pl-6 lg:pl-14">
+    <h3 class="text-white font-light tracking-widest uppercase text-lg lg:text-2xl">EDWIN</h3>
+    <div class="hidden lg:flex items-center gap-1 ml-4">
+      <div class="bg-white/20 h-[1px] w-32 mr-3"></div>
+      <a href="https://wa.me/9052870113" target="_blank" class="w-9 h-9 flex items-center justify-center 
+          rounded-lg text-white/40 hover:text-green-400 hover:bg-green-400/10 border border-transparent
+          hover:border-green-400/20 transition-all duration-200">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.116.549 4.103 1.51 5.833L.055 23.27a.75.75 0 00.916.916l5.44-1.455A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.694 9.694 0 01-4.951-1.356l-.355-.211-3.676.984.985-3.595-.231-.371A9.694 9.694 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+        </svg>
+      </a>
+      <a href="https://x.com/eadwyne02" target="_blank" class="w-9 h-9 flex items-center justify-center 
+          rounded-lg text-white/40 hover:text-sky-400 hover:bg-sky-400/10 border border-transparent
+          hover:border-sky-400/20 transition-all duration-200">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </a>
+      <a href="https://github.com/eadwyne02" target="_blank" class="w-9 h-9 flex items-center 
+          justify-center rounded-lg text-white/40 hover:text-white hover:bg-white/10 border 
+          border-transparent hover:border-white/20 transition-all duration-200">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+        </svg>
+      </a>
     </div>
-    <div id="nav-storage"></div>
-   </header> 
-   <section class="hero">
-    <div class="heroiam fade-in">
-        <h1>Hi, I'm Adeyi-Samuel Edwin</h1>
-        <h2 >Frontend Web Developer.</h2>
-        <div class="bcend">
-            <h4 id="typewriter"></h4>
-            <img src="img/ed6.jpg" alt="">
-        </div>
-        <div class="icons">
-            <a href="https://wa.link/wla4w3"><i class="fab fa-whatsapp fa-2x"></i></a>
-            <a href="https://github.com/eadwyne02"><i class="fab fa-github fa-2x"></i></a>
-            <a href="https://x.com/eadwyne02"><i class="fab fa-x-twitter fa-2x"></i></a>
-            <a href="https://linkedin.com/in/edwin-adeyi-samuel-b9b791320"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a href="https://instagram.com/eadwyne02"><i class="fab fa-instagram fa-2x"></i></a>
-        </div>
-        <button class="contact-btn" id="contact-btn">CONTACT ME</button>
-    </div>
-    <div class="hero-img fade-in">
-        <img src="img/ed6.jpg" alt="">
-    </div>
-   </section>
-   <div class="merge">
-    <section class="about pb-3 ">
-    <div class="about-me fade-in">
-        <h2>About me</h2>
-    </div>
-    <div class="about-grid">
-        <div class=" about-top fade-in">
-            <p>I am a frontend developer passionate about creating engaging  and user-friendly websites. I specialize in HTML, CSS, Bootstrap, Vanilla Js and React Js. I enjoy creating responsive, user-friendly websites and visually engaging designs that blend functionality with aesthetic appeal. I continuously seek opportunities to grow and refine my skills. Currently pursuing a degree in Mechanical Engineering at Ladoke Akintola University of Technology. I balance my technical knowledge with creativity and a strong commitment to learning and innovation.</p>
-            <button class="download-resume mb-5">
-                <a href="resume.pdf">
-                    <i class="fas fa-copy"></i>Download Resume
-                </a>
-            </button>
-        </div>
-        <div class="about-icons fade-in">
-            <div>
-                <i class="fab fa-html5 fa-3x"></i>
-                <h6>HTML5</h6>
-            </div>
-            <div>
-                <i class="fab fa-css3 fa-3x"></i>
-                <h6>CSS3</h6>
-            </div>
-            <div>
-                <i class="fab fa-js fa-3x"></i>
-                <h6>JavaScript</h6>
-            </div>
-            <div>
-                <i class="fab fa-react fa-3x"></i>
-                <h6>React</h6>
-            </div>
-            <div>
-                <i class="fab fa-bootstrap fa-3x"></i>
-                <h6>Bootstrap</h6>
-            </div>
-            <div>
-                <i class="fab fa-git-alt fa-3x"></i>
-                <h6>Git</h6>
-            </div>
-        </div>
-    </div>
-    
-   </section>
-   <section class="Projects">
-    <h2 class="fade-in">Projects</h2>
-    <h5 id="recentWork" class="fade-in"></h5>
-    <div class="works">
-        <div class="card-wrapper fade-in">
-        <div class="card">
-            <img src="img/preview.png" alt="" class="screenshot">
-        </div>
-        <h3>Automobile Workshop Website</h3>
-        <p>Responsive Automobile workshop website built with HTML, CSS and Vanilla Js.</p>
-        <div class="action-btn">
-            <button class="live-btn"><a href="https://ammeerullahiandbrothersauto.github.io/Company-website-/">Live Demo</a></button>
-            <button class="git-btn"><a href="https://github.com/ammeerullahiandbrothersauto/Company-website-">GitHub</a></button>
-        </div>
-        </div>
-        <div class="card-wrapper fade-in">
-        <div class="card">
-            <img src="img/seaplace.png" alt="" class="screenshot">
-        </div>
-        <h3>Hotel Booking Website</h3>
-        <p>Responsive Hotel Booking Website built with HTML, CSS and Vanilla Js.</p>
-        <div class="action-btn">
-            <button class="live-btn"><a href="https://eadwyne02.github.io/Seaplace/">Live Demo</a></button>
-            <button class="git-btn"><a href="https://github.com/eadwyne02/Seaplace/">GitHub</a></button>
-        </div>
-        </div>
-        <div class="card-wrapper fade-in">
-        <div class="card">
-            <img src="img/mex car.png" alt="" class="screenshot">
-        </div>
-        <h3>Automobile Dealership Website</h3>
-        <p>Responsive Automobile Dealership Website built with HTML, CSS and Vanilla Js.</p>
-        <div class="action-btn">
-            <button class="live-btn"><a href="https://eadwyne02.github.io/mex-cars/">Live Demo</a></button>
-            <button class="git-btn"><a href="https://github.com/eadwyne02/mex-cars/">GitHub</a></button>
-        </div>
-        </div>
-        <div class="card-wrapper fade-in">
-        <div class="card-todo">
-            <img src="img/todo list.png" alt="" class="screen">
-        </div>
-        <h3>Todo list Website</h3>
-        <p>Responsive Todo list Website built with HTML, CSS, Vanilla Js and React Js.</p>
-        <div class="action-btn">
-            <button class="live-btn"><a href="https://eadwyne02.github.io/todoList/">Live Demo</a></button>
-            <button class="git-btn"><a href="https://github.com/eadwyne02/todoList/">GitHub</a></button>
-        </div>
-        </div>
-        <div class="card-wrapper fade-in">
-        <div class="card-todo">
-            <img src="img/text analyser.png" alt="" class="screen">
-        </div>
-        <h3>Text Analyser Website</h3>
-        <p>Responsive Text Analyser Website built with HTML, CSS and Vanilla Js.</p>
-        <div class="action-btn">
-            <button class="live-btn"><a href="https://eadwyne02.github.io/Text-Analyzer">Live Demo</a></button>
-            <button class="git-btn"><a href="https://github.com/eadwyne02/Text-Analyzer/">GitHub</a></button>
-        </div>
-        </div>
-    </div>
-   </section>
-      <section class="contact">
-    <h2 class="fade-in">Contact</h2>
-        <div class="contact-grid">
-             <div class="contact-phone fade-in">
-                <h5>Need to get in touch? I'll love to hear from you.</h5>
-                <div class="contact-phone-number">
-                    <h3><i class="fas fa-phone"></i>Phone:</h3>
-                    <p>
-                        <a href="tel:09052870113">09052870113</a>
-                    </p>
-                </div>
-                <div class="contact-phone-num ml">
-                    <h3><i class="fas fa-envelope"></i>Email:</h3>
-                    <p >
-                        <a href="mailto:adeyieddieuel@gmail.com">adeyieddieuel@gmail.com</a>
-                    </p>
-                </div>
-             </div>
-             <div class="contact-form fade-in">
-                <h5>Fill out the form below to send me a message</h5>
-                <div class="contact-form-flex">
-                    <h4>Name</h4>
-                    <input type="text" id="name" placeholder="Enter your name">
-                    <p id="nameErr"></p>
-                </div>
-                <div class="contact-form-flex">
-                    <h4 >Email</h4>
-                    <input id="mail" type="email" placeholder="Enter your mail">
-                    <p id="mailErr"></p>
-                </div>
-                <div class="contact-form-flex">
-                    <h4>Message</h4>
-                    <textarea name="" id="message" placeholder="write your message"></textarea>
-                    <p id="messageErr"></p>
-                </div>
-                <button id="sendMessage">Send Message</button>
-             </div>
-        </div>
-   </section>
+  </div>
+  <button id="icon-hamburger" class="flex md:hidden pr-6 flex-col justify-center items-center gap-1.5 w-10 h-10 cursor-pointer">
+    <span id="bar1" class="block w-6 h-[1.5px] bg-white/70 transition-all duration-300 origin-center"></span>
+    <span id="bar2" class="block w-6 h-[1.5px] bg-white/70 transition-all duration-300"></span>
+    <span id="bar3" class="block w-6 h-[1.5px] bg-white/70 transition-all duration-300 origin-center"></span>
+  </button>
+  <div class="hidden md:flex items-center h-full px-[60px] bg-white/5 border-l border-white/10">
+    <nav class="flex items-center gap-2 h-full">
+      <a href="index.html"   class="text-white/60 hover:text-white text-xs tracking-[0.2em] uppercase transition-colors duration-200 px-3 py-1 hover:border-b border-white lg:text-[1.1rem]">Home</a>
+      <a href="about.html"   class="text-white/60 hover:text-white text-xs tracking-[0.2em] uppercase transition-colors duration-200 px-3 py-1 hover:border-b border-white lg:text-[1.1rem]">About</a>
+      <a href="project.html" class="text-white/60 hover:text-white text-xs tracking-[0.2em] uppercase transition-colors duration-200 px-3 py-1 hover:border-b border-white lg:text-[1.1rem]">Projects</a>
+      <a href="contact.html" class="text-white/60 hover:text-white text-xs tracking-[0.2em] uppercase transition-colors duration-200 px-3 py-1 hover:border-b border-white lg:text-[1.1rem]">Contact</a>
+    </nav>
+  </div>
 
-   </div>
-   <footer class="fade-in">
-        <div class="first-footer">
-        <h3 id="Edwin">EDWIN</h3>
-         <div>
-            <a href="https://wa.link/wla4w3"><i class="fab fa-whatsapp fa-2x"></i></a>
-            <a href="https://github.com/eadwyne02"><i class="fab fa-github fa-2x"></i></a>
-            <a href="https://x.com/eadwyne02"><i class="fab fa-x-twitter fa-2x"></i></a>
-            <a href="https://linkedin.com/in/edwin-adeyi-samuel-b9b791320"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a href="https://instagram.com/eadwyne02"><i class="fab fa-instagram fa-2x"></i></a>
-        </div>
+</header>
+
+<div id="mobile-menu" class="hidden fixed top-20 left-0 right-0 z-40 flex-col bg-[#0f172a]/95 
+    backdrop-blur-lg border-b border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)] px-6 py-4 gap-1">
+  <a href="index.html" class="text-white/60 hover:text-white text-xs tracking-[0.2em] uppercase
+    transition-colors duration-200 px-3 py-4 border-b border-white/5">Home</a>
+  <a href="about.html" class="text-white/60 hover:text-white text-xs tracking-[0.2em] uppercase
+    transition-colors duration-200 px-3 py-4 border-b border-white/5">About</a>
+  <a href="project.html" class="text-white/60 hover:text-white text-xs tracking-[0.2em] uppercase
+    transition-colors duration-200 px-3 py-4 border-b border-white/5">Projects</a>
+  <a href="contact.html" class="text-white/60 hover:text-white text-xs tracking-[0.2em] uppercase
+    transition-colors duration-200 px-3 py-4">Contact</a>
+  <div class="flex items-center gap-3 px-3 pt-4 pb-2">
+    <a href="https://wa.me/9052870113" target="_blank" class="w-9 h-9 flex items-center justify-center 
+      rounded-lg text-white/40 hover:text-green-400 hover:bg-green-400/10 border border-white/10
+      hover:border-green-400/20 transition-all duration-200">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.116.549 4.103 1.51 5.833L.055 23.27a.75.75 0 00.916.916l5.44-1.455A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.694 9.694 0 01-4.951-1.356l-.355-.211-3.676.984.985-3.595-.231-.371A9.694 9.694 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+      </svg>
+    </a>
+    <a href="https://x.com/eadwyne02" target="_blank"
+       class="w-9 h-9 flex items-center justify-center rounded-lg text-white/40 hover:text-sky-400 
+          hover:bg-sky-400/10 border border-white/10 hover:border-sky-400/20 transition-all duration-200">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+      </svg>
+    </a>
+    <a href="https://github.com/eadwyne02" target="_blank" class="w-9 h-9 flex items-center justify-center
+      rounded-lg text-white/40 hover:text-white hover:bg-white/10 border border-white/10 hover:
+      border-white/20 transition-all duration-200">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+<main>
+     <section class="relative min-h-screen flex items-center overflow-hidden px-6 lg:px-20 mt-5">
+    <div class="absolute top-20 left-10 w-72 h-72 bg-indigo-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+    <div class="absolute bottom-20 right-10 w-96 h-96 bg-sky-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none"
+         style="background-image: linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px); background-size: 60px 60px;">
     </div>
-    <p class="copyright"> ©copyright <strong> Adeyi-SamuelEdwin2025 </strong></p>
-   </footer>
+    <div class="relative z-10 w-full grid lg:grid-cols-2 gap-16 items-center py-24 lg:py-0">
+      <div class="flex flex-col gap-6">
+        <div class="fade-up delay-1 flex items-center gap-3">
+          <span class="w-8 h-[1px] bg-indigo-400"></span>
+          <p class="text-indigo-400 text-xs tracking-[0.3em] uppercase font-light md:text-xl lg:text-2xl">Hello, I'm</p>
+        </div>
+        <div class="fade-up delay-2">
+          <h1 class="display-font text-7xl lg:text-8xl font-light leading-none shimmer-text cursor">
+            EDWIN
+          </h1>
+        </div>
+        <div class="fade-up delay-3">
+          <h2 class="text-slate-300 text-sm tracking-[0.25em] uppercase font-light lg:text-xl">
+            Frontend Web Developer
+          </h2>
+          <div class="mt-3 flex items-center gap-3">
+            <div class="h-[1px] w-12 bg-indigo-500"></div>
+            <div class="h-[1px] w-4 bg-sky-500"></div>
+            <div class="h-[1px] w-2 bg-indigo-500/40"></div>
+          </div>
+        </div>
+        <p class="fade-up delay-4 text-slate-400 text-sm leading-relaxed max-w-md font-light lg:text-xl">
+          I craft modern, responsive, and user-focused web interfaces that blend design with
+          functionality. As a frontend developer, I turn ideas into seamless digital experiences.
+        </p>
+        <div class="fade-up delay-5 flex flex-wrap gap-4 mt-2">
+          <button class="btn-primary group flex items-center gap-2 bg-indigo-600 text-white text-xs tracking-[0.15em] uppercase px-7 py-3.5 rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_rgba(99,102,241,0.4)]">
+            <span>View Projects</span>
+            <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </button>
+          <button class="group flex items-center gap-2 border border-slate-600 hover:border-indigo-400 text-slate-300 hover:text-white text-xs tracking-[0.15em] uppercase px-7 py-3.5 rounded-sm transition-all duration-300">
+            <span>Get in Touch</span>
+            <svg class="w-3.5 h-3.5 group-hover:rotate-45 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10"/>
+            </svg>
+          </button>
+        </div>
+        <div class="fade-up delay-5 flex items-center gap-8 mt-4 pt-6 border-t border-white/5">
+          <div class="text-center">
+            <p class="text-white text-xl font-light" id="projects-count">0</p>
+            <p class="text-slate-500 text-[10px] tracking-widest uppercase mt-1 lg:text-[16px]">Projects</p>
+          </div>
+          <div class="w-[1px] h-8 bg-white/10"></div>
+          <div class="text-center">
+            <p class="text-white text-xl font-light" id="exp-count">0</p>
+            <p class="text-slate-500 text-[10px] tracking-widest uppercase mt-1 lg:text-[16px]">Years Exp.</p>
+          </div>
+          <div class="w-[1px] h-8 bg-white/10"></div>
+          <div class="text-center">
+            <p class="text-white text-xl font-light" id="clients-count">0</p>
+            <p class="text-slate-500 text-[10px] tracking-widest uppercase mt-1 lg:text-[16px]">Clients</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="fade-up delay-3 flex justify-center lg:justify-end">
+        <div class="relative">
+          <div class="absolute inset-0 rounded-full border border-indigo-500/20 scale-110"></div>
+          <div class="absolute inset-0 rounded-full border border-sky-500/10 scale-125"></div>
+          <div class="absolute inset-4 rounded-full bg-gradient-to-b from-indigo-600/20 to-sky-500/20 blur-xl"></div>
+          <div class="img-float relative w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border border-white/10">
+            <img src="img/ed.webp" alt="Edwin" class="w-full h-full object-cover object-center"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a]/40 to-transparent"></div>
+          </div>
+          <div class="absolute bottom-4 right-4 w-4 h-4 rounded-full bg-indigo-500 border-2 border-[#0f172a]"></div>
+          <div class="absolute top-8 left-2 w-2 h-2 rounded-full bg-sky-400/60"></div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 fade-up delay-5">
+      
+      <div class="w-[1px] h-8 bg-gradient-to-b from-slate-600 to-transparent"></div>
+    </div>
+
+  </section>
+    <!-- skills -->
+  <section class="relative bg-[#0f172a] py-10 px-6 overflow-hidden">
+    <h2 class="text-3xl text-center md:text-4xl font-semibold text-slate-100 mb-3 tracking-tight">
+      Skills & Expertise
+    </h2>
+    <p class="text-slate-500  text-center  mb-14 text-sm lg:text-xl">
+      Technologies and tools I use to craft modern web experiences.
+    </p>
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="skill-card group relative bg-white/[0.03] border border-white/[0.07] rounded-2xl p-6 text-left
+                  overflow-hidden transition-all duration-300 hover:-translate-y-1.5 hover:border-white/[0.15] hover:bg-white/[0.05]">
+        <div class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+             style="background: radial-gradient(ellipse at top left, rgba(99,102,241,0.12), transparent 65%)"></div>
+        <div class="relative z-10">
+          <div class="w-11 h-11 rounded-xl bg-indigo-500/15 flex items-center justify-center mb-5">
+            <i class="devicon-react-original text-indigo-400 text-xl"></i>
+          </div>
+          <h3 class="text-slate-200 font-semibold text-base mb-5 lg:text-[1.4rem]">Frontend</h3>
+          <ul class="space-y-2.5">
+            <li class="flex items-center gap-2.5 text-slate-400 text-sm hover:text-slate-300 transition-colors">
+              <i class="devicon-html5-plain w-5 text-center text-lg text-[#e34f26] lg:text-[1.4rem]" ></i> HTML5
+            </li>
+            <li class="flex items-center gap-2.5 text-slate-400 text-sm hover:text-slate-300 transition-colors">
+              <i class="devicon-css3-plain w-5 text-center text-lg text-[#264de4] lg:text-[1.4rem]" ></i> CSS3
+            </li>
+            <li class="flex items-center gap-2.5 text-slate-400 text-sm hover:text-slate-300 transition-colors">
+              <i class="devicon-javascript-plain w-5 text-center text-lg text-[#f7df1e] lg:text-[1.4rem]"></i> JavaScript
+            </li>
+            <li class="flex items-center gap-2.5 text-slate-400 text-sm hover:text-slate-300 transition-colors">
+              <i class="devicon-tailwindcss-plain w-5 text-center text-lg text-[#38bdf8] lg:text-[1.4rem]"></i> Tailwind CSS
+            </li>
+            <li class="flex items-center gap-2.5 text-slate-400 text-sm hover:text-slate-300 transition-colors">
+              <i class="devicon-typescript-plain w-5 text-center text-lg text-[#3178c6] lg:text-[1.4rem]"></i> TypeScript
+            </li>
+            <li class="flex items-center gap-2.5 text-slate-400 text-sm hover:text-slate-300 transition-colors">
+              <i class="devicon-react-original w-5 text-center text-lg text-[#61dafb] lg:text-[1.4rem]"></i> React.js
+            </li>
+            <li class="h-px bg-white/[0.06] my-1"></li>
+            <li class="flex items-center gap-2.5 text-slate-500 text-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-600 flex-shrink-0 lg:text-[1.4rem]"></span> Responsive Design
+            </li>
+            <li class="flex items-center gap-2.5 text-slate-500 text-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-600 flex-shrink-0 lg:text-[1.4rem]"></span> Accessibility
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="skill-card group relative bg-white/[0.03] border border-white/[0.07] rounded-2xl p-6 text-left
+                  overflow-hidden transition-all duration-300 hover:-translate-y-1.5 hover:border-white/[0.15] hover:bg-white/[0.05]">
+        <div class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+             style="background: radial-gradient(ellipse at top left, rgba(236,72,153,0.10), transparent 65%)"></div>
+        <div class="relative z-10 ">
+          <div class="w-11 h-11 rounded-xl bg-pink-500/15 flex items-center justify-center mb-5">
+            <i class="devicon-figma-plain text-pink-400 text-xl"></i>
+          </div>
+          <h3 class="text-slate-200 font-semibold text-base mb-5 lg:text-[1.4rem]">UI / UX</h3>
+          <ul class="space-y-2.5">
+            <li class="flex items-center gap-2.5 text-slate-400 text-sm hover:text-slate-300 transition-colors">
+              <i class="devicon-figma-plain w-5 text-center text-lg text-[#a259ff] lg:text-[1.4rem]"></i> Figma → Code
+            </li>
+            <li class="h-px bg-white/[0.06] my-1"></li>
+            <li class="flex items-center gap-2.5 text-slate-500 text-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-600 flex-shrink-0 lg:text-[1.4rem]"></span> Modern UI Design
+            </li>
+            <li class="flex items-center gap-2.5 text-slate-500 text-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-600 flex-shrink-0 lg:text-[1.4rem]"></span> Mobile-First Design
+            </li>
+            <li class="flex items-center gap-2.5 text-slate-500 text-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-600 flex-shrink-0 lg:text-[1.4rem]"></span> User Experience
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="skill-card group relative bg-white/[0.03] border border-white/[0.07] rounded-2xl p-6 text-left
+                  overflow-hidden transition-all duration-300 hover:-translate-y-1.5 hover:border-white/[0.15] hover:bg-white/[0.05]">
+        <div class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+             style="background: radial-gradient(ellipse at top left, rgba(14,165,233,0.10), transparent 65%)"></div>
+        <div class="relative z-10">
+          <div class="w-11 h-11 rounded-xl bg-sky-500/15 flex items-center justify-center mb-5">
+            <i class="devicon-git-plain text-sky-400 text-xl"></i>
+          </div>
+          <h3 class="text-slate-200 font-semibold text-base mb-5 lg:text-[1.4rem]">Tools</h3>
+          <ul class="space-y-2.5">
+            <li class="flex items-center gap-2.5 text-slate-400 text-sm hover:text-slate-300 transition-colors">
+              <i class="devicon-git-plain w-5 text-center text-lg text-[#f05032] lg:text-[1.4rem]"></i> Git
+            </li>
+            <li class="flex items-center gap-2.5 text-slate-400 text-sm hover:text-slate-300 transition-colors">
+              <i class="devicon-github-original w-5 text-center text-lg text-slate-300 lg:text-[1.4rem]"></i> GitHub
+            </li>
+            <li class="flex items-center gap-2.5 text-slate-400 text-sm hover:text-slate-300 transition-colors">
+              <i class="devicon-vscode-plain w-5 text-center text-lg text-[#007acc] lg:text-[1.4rem]"></i> VS Code
+            </li>
+            <li class="h-px bg-white/[0.06] my-1"></li>
+            <li class="flex items-center gap-2.5 text-slate-500 text-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-600 flex-shrink-0 lg:text-[1.4rem]"></span> Debugging
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="skill-card group relative bg-white/[0.03] border border-white/[0.07] rounded-2xl p-6 text-left
+                  overflow-hidden transition-all duration-300 hover:-translate-y-1.5 hover:border-white/[0.15] hover:bg-white/[0.05]">
+        <div class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+             style="background: radial-gradient(ellipse at top left, rgba(16,185,129,0.10), transparent 65%)"></div>
+        <div class="relative z-10">
+          <div class="w-11 h-11 rounded-xl bg-emerald-500/15 flex items-center justify-center mb-5">
+            <i class="devicon-nodejs-plain text-emerald-400 text-xl"></i>
+          </div>
+          <h3 class="text-slate-200 font-semibold text-base mb-5 lg:text-[1.4rem]">Other</h3>
+          <ul class="space-y-2.5">
+            <li class="flex items-center gap-2.5 text-slate-400 text-sm hover:text-slate-300 transition-colors">
+              <i class="devicon-nodejs-plain w-5 text-center text-lg text-[#3c873a] lg:text-[1.4rem]"></i> REST APIs
+            </li>
+            <li class="h-px bg-white/[0.06] my-1"></li>
+            <li class="flex items-center gap-2.5 text-slate-500 text-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-600 flex-shrink-0 lg:text-[1.4rem]"></span> Performance Optimization
+            </li>
+            <li class="flex items-center gap-2.5 text-slate-500 text-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-600 flex-shrink-0 lg:text-[1.4rem]"></span> Clean Code
+            </li>
+            <li class="flex items-center gap-2.5 text-slate-500 text-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-600 flex-shrink-0 lg:text-[1.4rem]"></span> Problem Solving
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </section>
+  <!-- projects  -->
+  <section class="projects-section relative bg-[#0f172a] py-20 px-6 overflow-hidden">
+    <div class="relative z-10 max-w-[1200px] mx-auto">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-100 mb-3 tracking-tight ">Projects</h2>
+        <p class="text-slate-500 text-sm lg:text-[1.4rem]" id="recentWork">A selection of things I've designed and built.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="project-card group bg-white/[0.03] border border-white/[0.08] rounded-2xl overflow-hidden
+            opacity-0 translate-y-7 transition-all duration-300 hover:-translate-y-1.5 
+            hover:border-indigo-500/35 hover:shadow-[0_20px_60px_rgba(0,0,0,0.4),0_0_0_1px_rgba(99,102,241,0.1)]">
+          <div class="img-viewport w-full h-48 sm:h-52 lg:h-56 overflow-hidden relative bg-[#0d1b2e] cursor-pointer">
+            <div class="absolute inset-0 z-10 pointer-events-none bg-gradient-to-b from-transparent via-transparent to-[rgba(15,23,42,0.6)]"></div>
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/project/ab-auto-lg.webp">
+              <source media="(min-width: 640px)"  srcset="img/project/ab-autos-md.webp">
+              <img src="img/project/ab-autos-sm.webp" alt="Automobile Workshop Website" class="screenshot-img w-full h-auto block"/>
+            </picture>
+          </div>
+          <div class="p-5">
+            <div class="flex flex-wrap gap-1.5 mb-3">
+              <span class="text-[10px] font-medium uppercase tracking-wide px-2.5 py-1 rounded-full
+                  bg-orange-500/10 border border-orange-500/20 text-orange-300 ">HTML</span>
+              <span class="text-[10px] font-medium uppercase tracking-wide px-2.5 py-1 rounded-full
+                  bg-blue-500/10 border border-blue-500/20 text-blue-300 ">CSS</span>
+              <span class="text-[10px] font-medium uppercase tracking-wide px-2.5 py-1 rounded-full
+                  bg-yellow-400/10 border border-yellow-400/20 text-yellow-300 ">JS</span>
+            </div>
+            <h3 class="text-slate-200 font-semibold text-[0.95rem] mb-2 lg:text-[1.2rem]">Automobile Workshop Website</h3>
+            <p class="text-slate-500 text-[0.8rem] leading-relaxed mb-5 lg:text-[1rem]"> Responsive automobile workshop website built with HTML, CSS and Vanilla JS.</p>
+            <div class="flex gap-2.5">
+              <a href="https://ammeerullahiandbrothersauto.github.io/Company-website-/" class="inline-flex 
+                items-center gap-1.5 text-[0.75rem] font-medium px-4 py-2 rounded-lg bg-indigo-500/15 border
+                border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/28 hover:border-indigo-500/55 
+                hover:text-indigo-200 transition-all duration-200 lg:text-[1rem]" target="_blank">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo </a>
+              <a href="https://github.com/ammeerullahiandbrothersauto/Company-website-" class="inline-flex
+               items-center gap-1.5 text-[0.75rem] font-medium px-4 py-2 rounded-lg bg-white/[0.04] border
+                border-white/10 text-slate-400 hover:bg-white/[0.09] hover:border-white/20 
+                hover:text-slate-300 transition-all duration-200 lg:text-[1rem]" target="_blank">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card group bg-white/[0.03] border border-white/[0.08] rounded-2xl 
+        overflow-hidden opacity-0 translate-y-7 transition-all duration-300 hover:-translate-y-1.5 
+        hover:border-indigo-500/35 hover:shadow-[0_20px_60px_rgba(0,0,0,0.4),0_0_0_1px_rgba(99,102,241,0.1)]">
+          <div class="img-viewport w-full h-48 sm:h-52 lg:h-56 overflow-hidden relative bg-[#0d1b2e] cursor-pointer">
+            <div class="absolute inset-0 z-10 pointer-events-none bg-gradient-to-b from-transparent 
+            via-transparent to-[rgba(15,23,42,0.6)]"></div>
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/project/dessert-product-md.webp">
+              <source media="(min-width: 640px)"  srcset="img/project/dessert-product-md.webp">
+              <img src="img/project/dessert-product-sm.webp" alt="Food Store Web Application"
+                  class="screenshot-img w-full h-auto block"/>
+            </picture>
+          </div>
+          <div class="p-5">
+            <div class="flex flex-wrap gap-1.5 mb-3">
+              <span class="text-[10px] font-medium uppercase tracking-wide px-2.5 py-1 rounded-full
+                          bg-orange-500/10 border border-orange-500/20 text-orange-300 ">HTML</span>
+              <span class="text-[10px] font-medium uppercase tracking-wide px-2.5 py-1 rounded-full
+                          bg-blue-500/10 border border-blue-500/20 text-blue-300 ">CSS</span>
+              <span class="text-[10px] font-medium uppercase tracking-wide px-2.5 py-1 rounded-full
+                          bg-yellow-400/10 border border-yellow-400/20 text-yellow-300 ">JS</span>
+              <span class="text-[10px] font-medium uppercase tracking-wide px-2.5 py-1 rounded-full
+               bg-cyan-400/10 border border-cyan-400/20 text-cyan-300 ">Tailwind</span>
+              
+            </div>
+
+            <h3 class="text-slate-200 font-semibold text-[0.95rem] mb-2 lg:text-[1.2rem]">Food Store Web Application</h3>
+            <p class="text-slate-500 text-[0.8rem] leading-relaxed mb-5 lg:text-[1rem]">
+             Responsive food ordering website built with HTML, CSS, Tailwind Css and Vanilla JavaScript, featuring a clean UI and smooth user experience.
+            </p>
+            <div class="flex gap-2.5">
+              <a href="https://eadwyne02.github.io/Dessert-Product/"
+                class="inline-flex items-center gap-1.5 text-[0.75rem] font-medium px-4 py-2 rounded-lg
+                  bg-indigo-500/15 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/28 
+                  hover:border-indigo-500/55 hover:text-indigo-200 transition-all duration-200 lg:text-[1rem]" target="_blank">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Demo
+              </a>
+              <a href="https://github.com/eadwyne02/Dessert-Product"
+                class="inline-flex items-center gap-1.5 text-[0.75rem] font-medium px-4 py-2 rounded-lg
+                  bg-white/[0.04] border border-white/10 text-slate-400 hover:bg-white/[0.09] hover:border-white/20 
+                  hover:text-slate-300 transition-all duration-200 lg:text-[1rem]" target="_blank">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card group bg-white/[0.03] border border-white/[0.08] rounded-2xl 
+        overflow-hidden opacity-0 translate-y-7 transition-all duration-300 hover:-translate-y-1.5 
+        hover:border-indigo-500/35 hover:shadow-[0_20px_60px_rgba(0,0,0,0.4),0_0_0_1px_rgba(99,102,241,0.1)]">
+          <div class="img-viewport w-full h-48 sm:h-52 lg:h-56 overflow-hidden relative bg-[#0d1b2e] cursor-pointer">
+            <div class="absolute inset-0 z-10 pointer-events-none bg-gradient-to-b from-transparent 
+            via-transparent to-[rgba(15,23,42,0.6)]"></div>
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/project/space-tour-lg.webp">
+              <source media="(min-width: 640px)"  srcset="img/project/space-tour-md.webp">
+              <img src="img/project/space-tour-sm.webp" alt="Space tour Website"
+                  class="screenshot-img w-full h-auto block"/>
+            </picture>
+          </div>
+          <div class="p-5">
+            <div class="flex flex-wrap gap-1.5 mb-3">
+              <span class="text-[10px] font-medium uppercase tracking-wide px-2.5 py-1 rounded-full
+                          bg-orange-500/10 border border-orange-500/20 text-orange-300">HTML</span>
+              <span class="text-[10px] font-medium uppercase tracking-wide px-2.5 py-1 rounded-full
+                          bg-blue-500/10 border border-blue-500/20 text-blue-300">CSS</span>
+              <span class="text-[10px] font-medium uppercase tracking-wide px-2.5 py-1 rounded-full
+                          bg-yellow-400/10 border border-yellow-400/20 text-yellow-300">JS</span>
+              <span class="text-[10px] font-medium uppercase tracking-wide px-2.5 py-1 rounded-full
+               bg-cyan-400/10 border border-cyan-400/20 text-cyan-300">Tailwind</span>
+            </div>
+
+            <h3 class="text-slate-200 font-semibold text-[0.95rem] mb-2 lg:text-[1.2rem]">Space Travel Experience Website</h3>
+            <p class="text-slate-500 text-[0.8rem] leading-relaxed mb-5 lg:text-[1rem]">
+             Modern space tourism website built with HTML, CSS, Tailwind Css and Vanilla JavaScript, designed to deliver an immersive and engaging user experience.
+            </p>
+            <div class="flex gap-2.5">
+              <a href="https://eadwyne02.github.io/Space-Tourism/"
+                class="inline-flex items-center gap-1.5 text-[0.75rem] font-medium px-4 py-2 rounded-lg
+                  bg-indigo-500/15 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/28 
+                  hover:border-indigo-500/55 hover:text-indigo-200 transition-all duration-200 lg:text-[1rem]" target="_blank">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Demo
+              </a>
+              <a href="https://github.com/eadwyne02/Space-Tourism"
+                class="inline-flex items-center gap-1.5 text-[0.75rem] font-medium px-4 py-2 rounded-lg bg-white/[0.04] 
+                  border border-white/10 text-slate-400 hover:bg-white/[0.09] hover:border-white/20 
+                  hover:text-slate-300 transition-all duration-200 lg:text-[1rem]" target="_blank">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card group bg-white/[0.03] border border-white/[0.08] rounded-2xl 
+        overflow-hidden opacity-0 translate-y-7 transition-all duration-300 hover:-translate-y-1.5 
+        hover:border-indigo-500/35 hover:shadow-[0_20px_60px_rgba(0,0,0,0.4),0_0_0_1px_rgba(99,102,241,0.1)]">
+          <div class="img-viewport w-full h-48 sm:h-52 lg:h-56 overflow-hidden relative bg-[#0d1b2e] cursor-pointer">
+            <div class="absolute inset-0 z-10 pointer-events-none bg-gradient-to-b from-transparent 
+            via-transparent to-[rgba(15,23,42,0.6)]"></div>
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/project/Weather-App-lg.webp">
+              <source media="(min-width: 640px)"  srcset="img/project/Weather-App-md.webp">
+              <img src="img/project/Weather-App-sm.webp" alt="Weather App Website"
+                  class="screenshot-img w-full h-auto block"/>
+            </picture>
+          </div>
+          <div class="p-5">
+            <div class="flex flex-wrap gap-1.5 mb-3">
+              <span class="text-[10px] font-medium uppercase tracking-wide px-2.5 py-1 rounded-full
+                          bg-orange-500/10 border border-orange-500/20 text-orange-300">HTML</span>
+              <span class="text-[10px] font-medium uppercase tracking-wide px-2.5 py-1 rounded-full
+                          bg-blue-500/10 border border-blue-500/20 text-blue-300">CSS</span>
+              <span class="text-[10px] font-medium uppercase tracking-wide px-2.5 py-1 rounded-full
+                          bg-yellow-400/10 border border-yellow-400/20 text-yellow-300">JS</span>
+            </div>
+
+            <h3 class="text-slate-200 font-semibold text-[0.95rem] mb-2 lg:text-[1.2rem]">Weather App</h3>
+            <p class="text-slate-500 text-[0.8rem] leading-relaxed mb-5 lg:text-[1rem]">
+             Responsive weather forecast app built with HTML, CSS and JavaScript, providing real-time weather updates.
+            </p>
+            <div class="flex gap-2.5">
+              <a href="https://eadwyne02.github.io/Weather-App/"
+                class="inline-flex items-center gap-1.5 text-[0.75rem] font-medium px-4 py-2 rounded-lg
+                  bg-indigo-500/15 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/28 
+                  hover:border-indigo-500/55 hover:text-indigo-200 transition-all duration-200 lg:text-[1rem]" target="_blank">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Demo
+              </a>
+              <a href="https://github.com/eadwyne02/Weather-App"
+                class="inline-flex items-center gap-1.5 text-[0.75rem] font-medium px-4 py-2 rounded-lg
+                  bg-white/[0.04] border border-white/10 text-slate-400 hover:bg-white/[0.09] 
+                  hover:border-white/20 hover:text-slate-300 transition-all duration-200 lg:text-[1rem]" target="_blank">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card group bg-white/[0.03] border border-white/[0.08] rounded-2xl 
+        overflow-hidden opacity-0 translate-y-7 transition-all duration-300 hover:-translate-y-1.5 
+        hover:border-indigo-500/35 hover:shadow-[0_20px_60px_rgba(0,0,0,0.4),0_0_0_1px_rgba(99,102,241,0.1)]">
+          <div class="img-viewport w-full h-48 sm:h-52 lg:h-56 overflow-hidden relative bg-[#0d1b2e] cursor-pointer">
+            <div class="absolute inset-0 z-10 pointer-events-none bg-gradient-to-b from-transparent 
+            via-transparent to-[rgba(15,23,42,0.6)]"></div>
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/project/fablenest.webp">
+              <source media="(min-width: 640px)"  srcset="img/project/fablenest.webp">
+              <img src="img/project/fablenest.webp" alt="Blog website"
+                  class="screenshot-img w-full h-auto block"/>
+            </picture>
+          </div>
+          <div class="p-5">
+            <div class="flex flex-wrap gap-1.5 mb-3">
+              <span class="text-[10px] font-medium uppercase tracking-wide px-2.5 py-1 rounded-full
+                bg-orange-500/10 border border-orange-500/20 text-orange-300">HTML</span>
+              <span class="text-[10px] font-medium uppercase tracking-wide px-2.5 py-1 rounded-full
+                bg-blue-500/10 border border-blue-500/20 text-blue-300">CSS</span>
+              <span class="text-[10px] font-medium uppercase tracking-wide px-2.5 py-1 rounded-full
+               bg-cyan-400/10 border border-cyan-400/20 text-cyan-300">Tailwind</span>
+              <span class="text-[10px] font-medium uppercase tracking-wide px-2.5 py-1 rounded-full
+               bg-blue-600/10 border border-blue-600/20 text-blue-400">TypeScript</span>
+            </div>
+
+            <h3 class="text-slate-200 font-semibold text-[0.95rem] mb-2 lg:text-[1.2rem]">FableNest Blog</h3>
+            <p class="text-slate-500 text-[0.8rem] leading-relaxed mb-5 lg:text-[1rem]">
+             Responsive FableNest Blog built with HTML, CSS, Tailwind Css and TypeScript, give accurate number draws.
+            </p>
+            <div class="flex gap-2.5">
+              <a href="https://eadwyne02.github.io/Weather-App/"
+                class="inline-flex items-center gap-1.5 text-[0.75rem] font-medium px-4 py-2 rounded-lg
+                  bg-indigo-500/15 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/28 
+                  hover:border-indigo-500/55 hover:text-indigo-200 transition-all duration-200 lg:text-[1rem]" target="_blank">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Demo
+              </a>
+              <a href="https://github.com/eadwyne02/Weather-App"
+                class="inline-flex items-center gap-1.5 text-[0.75rem] font-medium px-4 py-2 rounded-lg
+                  bg-white/[0.04] border border-white/10 text-slate-400 hover:bg-white/[0.09] hover:border-white/20 
+                  hover:text-slate-300 transition-all duration-200 lg:text-[1rem]" target="_blank">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card group bg-white/[0.03] border border-white/[0.08] rounded-2xl 
+        overflow-hidden opacity-0 translate-y-7 transition-all duration-300 hover:-translate-y-1.5 
+        hover:border-indigo-500/35 hover:shadow-[0_20px_60px_rgba(0,0,0,0.4),0_0_0_1px_rgba(99,102,241,0.1)]">
+          <div class="img-viewport w-full h-48 sm:h-52 lg:h-56 overflow-hidden relative bg-[#0d1b2e] cursor-pointer">
+            <div class="absolute inset-0 z-10 pointer-events-none bg-gradient-to-b from-transparent 
+            via-transparent to-[rgba(15,23,42,0.6)]"></div>
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/project/raffle-draw.webp">
+              <source media="(min-width: 640px)"  srcset="img/project/raffle-draw.webp">
+              <img src="img/project/raffle-draw.webp" alt="Raffle Draw"
+                  class="screenshot-img w-full h-auto block"/>
+            </picture>
+          </div>
+          <div class="p-5">
+            <div class="flex flex-wrap gap-1.5 mb-3">
+              <span class="text-[10px] font-medium uppercase tracking-wide px-2.5 py-1 rounded-full
+                          bg-orange-500/10 border border-orange-500/20 text-orange-300">HTML</span>
+              <span class="text-[10px] font-medium uppercase tracking-wide px-2.5 py-1 rounded-full
+                          bg-yellow-400/10 border border-yellow-400/20 text-yellow-300">JS</span>
+              <span class="text-[10px] font-medium uppercase tracking-wide px-2.5 py-1 rounded-full
+               bg-cyan-400/10 border border-cyan-400/20 text-cyan-300">Tailwind</span>
+            </div>
+
+            <h3 class="text-slate-200 font-semibold text-[0.95rem] mb-2 lg:text-[1.2rem]">Raffle Draw</h3>
+            <p class="text-slate-500 text-[0.8rem] leading-relaxed mb-5 lg:text-[1rem]">
+             ResponsiveRaffle Draw built with HTML, Tailwind Css and JavaScript, give accurate number draws.
+            </p>
+            <div class="flex gap-2.5">
+              <a href="https://eadwyne02.github.io/Wther-App/"
+                class="inline-flex items-center gap-1.5 text-[0.75rem] font-medium px-4 py-2 rounded-lg
+                  bg-indigo-500/15 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/28 
+                  hover:border-indigo-500/55 hover:text-indigo-200 transition-all duration-200 lg:text-[1rem]" target="_blank">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Demo
+              </a>
+              <a href="https://github.com/eadwyne02/Weather-App"
+                class="inline-flex items-center gap-1.5 text-[0.75rem] font-medium px-4 py-2 rounded-lg
+                  bg-white/[0.04] border border-white/10 text-slate-400 hover:bg-white/[0.09] hover:border-white/20 
+                  hover:text-slate-300 transition-all duration-200 lg:text-[1rem]" target="_blank">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="relative bg-[#0f172a] py-20 px-6 overflow-hidden">
+    <div class="text-center mb-14 fade-up">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-100 mb-3 tracking-tight">
+        Contact Me
+      </h2>
+      <p class="text-slate-500 text-md lg:text-[1.2rem]">
+        Got a project, idea, or opportunity? Let’s talk.
+      </p>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-10">
+      <div class="fade-up delay-2 bg-white/[0.03] border border-white/[0.08] rounded-2xl p-8 backdrop-blur-xl">
+        <h3 class="text-slate-200 text-lg font-semibold mb-6">
+          Get in touch
+        </h3>
+        <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+          Need to get in touch? I’d love to hear from you. Whether it's a project,
+          collaboration, or just a quick question.
+        </p>
+        <div class="flex items-center gap-4 mb-6 group">
+          <div class="w-11 h-11 rounded-xl bg-indigo-500/15 flex items-center justify-center">
+            <i class="fas fa-phone text-indigo-400"></i>
+          </div>
+          <div>
+            <p class="text-slate-500 text-xs uppercase tracking-wider">Phone</p>
+            <a href="tel:09052870113"
+               class="text-slate-300 group-hover:text-white transition">
+              09052870113
+            </a>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 group">
+          <div class="w-11 h-11 rounded-xl bg-sky-500/15 flex items-center justify-center">
+            <i class="fas fa-envelope text-sky-400"></i>
+          </div>
+          <div>
+            <p class="text-slate-500 text-xs uppercase tracking-wider">Email</p>
+            <a href="mailto:adeyieddieuel@gmail.com"
+               class="text-slate-300 group-hover:text-white transition">
+              adeyieddieuel@gmail.com
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="fade-up delay-3 bg-white/[0.03] border border-white/[0.08] rounded-2xl p-8 backdrop-blur-xl">
+        <h3 class="text-slate-200 text-lg font-semibold mb-6">
+          Send a Message
+        </h3>
+        <div class="mb-5">
+          <label class="block text-slate-400 text-sm mb-2">Name</label>
+          <input type="text" id="name"
+            class="w-full bg-white/[0.04] border border-white/[0.08] rounded-lg px-4 py-3 text-slate-300 
+                   focus:outline-none focus:border-indigo-500 focus:bg-white/[0.06] transition"
+            placeholder="Enter your name">
+          <p id="nameErr" class="text-red-400 text-xs mt-1"></p>
+        </div>
+        <div class="mb-5">
+          <label class="block text-slate-400 text-sm mb-2">Email</label>
+          <input type="email" id="mail"
+            class="w-full bg-white/[0.04] border border-white/[0.08] rounded-lg px-4 py-3 text-slate-300 
+                   focus:outline-none focus:border-indigo-500 focus:bg-white/[0.06] transition"
+            placeholder="Enter your email">
+          <p id="mailErr" class="text-red-400 text-xs mt-1"></p>
+        </div>
+        <div class="mb-6">
+          <label class="block text-slate-400 text-sm mb-2">Message</label>
+          <textarea id="message" rows="5"
+            class="w-full bg-white/[0.04] border border-white/[0.08] rounded-lg px-4 py-3 text-slate-300 
+              focus:outline-none focus:border-indigo-500 focus:bg-white/[0.06] transition"
+            placeholder="Write your message"></textarea>
+          <p id="messageErr" class="text-red-400 text-xs mt-1"></p>
+        </div>
+        <button id="sendMessage"
+          class="w-full bg-indigo-600 text-white py-3 rounded-lg text-sm tracking-wider uppercase
+            hover:shadow-[0_0_25px_rgba(99,102,241,0.4)] transition-all duration-300">
+          Send Message
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<footer class="relative bg-[#0f172a] py-14 px-6 overflow-hidden">
+
+  <div class="absolute top-[-80px] left-[-80px] w-[300px] h-[300px] rounded-full bg-indigo-500/10 blur-[100px]"></div>
+  <div class="absolute bottom-[-80px] right-[-80px] w-[300px] h-[300px] rounded-full bg-sky-500/10 blur-[100px]"></div>
+  <div class="relative z-10 max-w-[1100px] mx-auto">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-8 border-b border-white/[0.08] pb-8">
+      <h3 class="display-font text-3xl text-slate-100 shimmer-text">
+        EDWIN
+      </h3>
+      <div class="flex items-center gap-4">
+
+        <a href="https://wa.link/wla4w3" target="_blank"
+          class="group w-11 h-11 flex items-center justify-center rounded-xl 
+                 bg-white/[0.04] border border-white/[0.08] 
+                 hover:bg-green-500/20 hover:border-green-400/40 transition">
+          <i class="fab fa-whatsapp text-slate-400 group-hover:text-green-400"></i>
+        </a>
+        <a href="https://github.com/eadwyne02" target="_blank"
+          class="group w-11 h-11 flex items-center justify-center rounded-xl 
+                 bg-white/[0.04] border border-white/[0.08] 
+                 hover:bg-white/[0.1] hover:border-white/20 transition">
+          <i class="fab fa-github text-slate-400 group-hover:text-white"></i>
+        </a>
+        <a href="https://x.com/eadwyne02" target="_blank"
+          class="group w-11 h-11 flex items-center justify-center rounded-xl 
+                 bg-white/[0.04] border border-white/[0.08] 
+                 hover:bg-white/[0.1] hover:border-white/20 transition">
+          <i class="fab fa-x-twitter text-slate-400 group-hover:text-white"></i>
+        </a>
+        <a href="https://linkedin.com/in/edwin-adeyi-samuel-b9b791320" target="_blank"
+          class="group w-11 h-11 flex items-center justify-center rounded-xl 
+                 bg-white/[0.04] border border-white/[0.08] 
+                 hover:bg-blue-500/20 hover:border-blue-400/40 transition">
+          <i class="fab fa-linkedin text-slate-400 group-hover:text-blue-400"></i>
+        </a>
+
+        <a href="https://instagram.com/eadwyne02" target="_blank"
+          class="group w-11 h-11 flex items-center justify-center rounded-xl 
+                 bg-white/[0.04] border border-white/[0.08] 
+                 hover:bg-pink-500/20 hover:border-pink-400/40 transition">
+          <i class="fab fa-instagram text-slate-400 group-hover:text-pink-400"></i>
+        </a>
+      </div>
+    </div>
+    <div class="text-center mt-6">
+      <p class="text-slate-500 text-sm tracking-wide">
+        © 2026 <span class="text-slate-300">Adeyi-Samuel Edwin</span>. All rights reserved.
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+</main>
+<a id="contactBtn" href="https://wa.me/2349052870113" target="_blank" class="fixed bottom-6 right-4 z-50 
+  w-14 h-14 rounded-full bg-green-500 text-white flex items-center justify-center shadow-lg 
+  hover:shadow-[0_0_25px_rgba(34,197,94,0.5)] transition-all duration-300">
+ <i class="fab fa-whatsapp text-xl"></i>
+</a>
 <script src="script.js"></script>
 </body>
 </html>
